@@ -50,7 +50,7 @@ class Clicksend
     {
         $payload = [
             [
-                'body' => $message,
+                'body' => $message->content,
                 'to' => $to,
             ]
         ];
