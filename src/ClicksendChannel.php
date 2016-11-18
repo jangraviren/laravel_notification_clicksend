@@ -75,8 +75,8 @@ class ClicksendChannel
         if ($notifiable->routeNotificationFor('clicksend')) {
             return $notifiable->routeNotificationFor('clicksend');
         }
-        if (isset($notifiable->phone_number)) {
-            return $notifiable->phone_number;
+        if (isset($notifiable->phone)) {
+            return $notifiable->phone;
         }
 
         throw new Exception('Invalid receiver number. Please try again.');
