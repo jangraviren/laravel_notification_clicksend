@@ -59,7 +59,7 @@ class OrderPaid extends Notification
 }
 ```
 
-In order to let your Notification know which phone are you sending/calling to, the channel will look for the `sms` attribute of the Notifiable model. If you want to override this behaviour, add the `routeNotificationForClicksend` method to your Notifiable model.
+In order to let your Notification know which phone are you sending to, the channel will look for the `sms` attribute of the Notifiable model. If you want to override this behaviour, add the `routeNotificationForClicksend` method to your Notifiable model.
 
 ```php
 public function routeNotificationForClicksend()
