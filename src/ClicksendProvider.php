@@ -23,10 +23,7 @@ class ClicksendProvider extends ServiceProvider
                 Configuration::$username = $config['username'];
                 Configuration::$key = $config['api_key'];
 
-                return new Clicksend(
-                    $this->app->make(SMSController::class),
-                    $config['from']
-                );
+                return new Clicksend($this->app->make(SMSController::class));
             });
     }
 

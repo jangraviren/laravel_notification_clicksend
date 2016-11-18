@@ -12,21 +12,13 @@ class Clicksend
     protected $clicksendSmsController;
 
     /**
-     * Default 'from' from config.
-     * @var string
-     */
-    protected $from;
-
-    /**
      * Clicksend constructor.
      *
-     * @param  SMSController $clicksendSmsController
-     * @param  string $from
+     * @param SMSController $clicksendSmsController
      */
-    public function __construct(SMSController $clicksendSmsController, $from)
+    public function __construct(SMSController $clicksendSmsController)
     {
         $this->clicksendSmsController = $clicksendSmsController;
-        $this->from = $from;
     }
 
     /**
