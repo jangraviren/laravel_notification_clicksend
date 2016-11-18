@@ -1,0 +1,21 @@
+{
+  "name": "omarusman/laravel_notification_clicksend",
+  "description": "Custom Laravel Notification for ClickSend channel.",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Omar Usman",
+      "email": "hello@omarusman.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.9",
+    "illuminate/notifications": "5.1.*|5.2.*|5.3.*",
+    "clicksend/clicksend-php": "4.0.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "ClickSendNotification\\": "src/"
+    }
+  }
+}
