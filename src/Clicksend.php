@@ -55,6 +55,6 @@ class Clicksend
             ]
         ];
 
-        return $this->clicksendSmsController->sendSms($payload);
+        return $this->clicksendSmsController->sendSms(['messages' => $payload]);
     }
 }
