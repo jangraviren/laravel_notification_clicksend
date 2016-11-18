@@ -19,7 +19,10 @@ class ClicksendProvider extends ServiceProvider
 
                 $config = $this->app['config']['services.clicksend'];
 
-                Configuration::$BASEURI = $config['base_uri'];
+                if (isset($config['base_uri']) AND !empty($config['base_uri'])) {
+                    Configuration::$BASEURI = $config['base_uri'];
+                }
+
                 Configuration::$username = $config['username'];
                 Configuration::$key = $config['api_key'];
 
