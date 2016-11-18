@@ -12,13 +12,6 @@ abstract class ClicksendMessage
     public $content;
 
     /**
-     * The phone number the message should be sent from.
-     *
-     * @var string
-     */
-    public $from;
-
-    /**
      * @param string $content
      *
      * @return static
@@ -48,20 +41,6 @@ abstract class ClicksendMessage
     public function content($content)
     {
         $this->content = $content;
-
-        return $this;
-    }
-
-    /**
-     * Set the phone number the message should be sent from.
-     *
-     * @param  string  $from
-     *
-     * @return $this
-     */
-    public function from($from)
-    {
-        $this->from = $from;
 
         return $this;
     }
