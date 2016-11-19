@@ -1,6 +1,6 @@
 <?php
 
-namespace ClickSendNotification;
+namespace NotificationChannels\ClickSend;
 
 class ClicksendSmsMessage extends ClicksendMessage
 {

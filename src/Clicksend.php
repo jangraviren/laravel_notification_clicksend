@@ -1,6 +1,6 @@
 <?php
 
-namespace ClickSendNotification;
+namespace NotificationChannels\ClickSend;
 
 use ClickSendLib\Controllers\SMSController;
 

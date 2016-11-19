@@ -1,6 +1,6 @@
 <?php
 
-namespace ClickSendNotification;
+namespace NotificationChannels\ClickSend;
 
 use Exception;
 use Illuminate\Contracts\Events\Dispatcher;
